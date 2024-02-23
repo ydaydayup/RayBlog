@@ -8,16 +8,16 @@ const beian = '闽ICP备2020017848号-2'
 const beian1 = '闽公网安备35021102000847号'
 
 const config: Config = {
-  title: '愧怍的小站',
-  url: 'https://kuizuo.cn',
+  title: 'Ray的小站',
+  url: 'https://ydaydayup.cn',
   baseUrl: '/',
-  favicon: 'img/favicon.ico',
-  organizationName: 'kuizuo',
+  favicon: 'img/favicon-logo.png',
+  organizationName: 'Ray',
   projectName: 'blog',
   customFields: {
     bio: '道阻且长，行则将至',
     description:
-      '是一个由愧怍创建的个人博客，主要分享编程开发知识和项目，该网站基于 React 驱动的静态网站生成器 Docusaurus 构建。',
+      '是一个由Ray创建的个人博客，主要分享编程开发知识和项目，该网站基于 React 驱动的静态网站生成器 Docusaurus 构建。',
   },
   themeConfig: {
     // announcementBar: {
@@ -27,7 +27,7 @@ const config: Config = {
     metadata: [
       {
         name: 'keywords',
-        content: '愧怍, kuizuo',
+        content: 'Ray, ray',
       },
       {
         name: 'keywords',
@@ -45,9 +45,9 @@ const config: Config = {
     },
     navbar: {
       logo: {
-        alt: '愧怍',
-        src: 'img/logo.webp',
-        srcDark: 'img/logo.webp',
+        alt: 'Ray',
+        src: 'img/favicon-logo.png',
+        srcDark: 'img/favicon-logo.png',
       },
       hideOnScroll: true,
       items: [
@@ -62,15 +62,39 @@ const config: Config = {
           to: 'project',
         },
         {
-          label: '更多',
+          label: '归档',
           position: 'right',
-          items: [
-            { label: '归档', to: 'blog/archive' },
-            { label: '笔记', to: 'docs/skill' },
-            { label: '资源', to: 'resources' },
-            { label: '友链', to: 'friends' },
-            { label: '工具推荐', to: 'docs/tools' },
-          ],
+          to: 'blog/archive',
+        },
+        {
+          label: '笔记',
+          position: 'right',
+          to: 'docs/skill/',
+        },
+        {
+          label: '工作随想',
+          position: 'right',
+          to: 'docs/thought_on_work/',
+        },
+        // {
+        //   label: '工作随想2',
+        //   position: 'right',
+        //   to: 'docs/work/',
+        // },
+        {
+          label: '资源',
+          position: 'right',
+          to: 'resource',
+        },
+        {
+          label:  '友链',
+          position: 'right',
+          to: 'friends',
+        },
+        {
+          label: '工具推荐',
+          position: 'right',
+          to: 'docs/tools/',
         },
         {
           type: 'localeDropdown',
@@ -121,13 +145,19 @@ const config: Config = {
         <p style="display: inline-flex; align-items: center;"><img style="height:20px;margin-right: 0.5rem;" src="/img/police.png" alt="police" height="20"/><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=${beian1.match(
           /\d+/,
         )?.[0]}" >${beian1}</a></p>
-        <p>Copyright © 2020 - PRESENT 愧怍 Built with Docusaurus.</p>
+        <p>Copyright © 2020 - PRESENT Ray Built with Docusaurus.</p>
         `,
     },
+    // algolia: {
+    //   appId: 'GV6YN1ODMO',
+    //   apiKey: '50303937b0e4630bec4a20a14e3b7872',
+    //   indexName: 'kuizuo',
+    // },
     algolia: {
-      appId: 'GV6YN1ODMO',
-      apiKey: '50303937b0e4630bec4a20a14e3b7872',
-      indexName: 'kuizuo',
+      appId: 'CP7031IGM2',
+      apiKey: '2faf032dffcb1c0693f445fe157ddc9a',
+      indexName: 'SunnyBlog',
+      contextualSearch: true,
     },
     prism: {
       theme: themes.oneLight,
@@ -157,13 +187,21 @@ const config: Config = {
       ],
     },
     giscus: {
-      repo: 'kuizuo/blog',
-      repoId: 'MDEwOlJlcG9zaXRvcnkzOTc2MjU2MTI=',
-      category: 'General',
-      categoryId: 'DIC_kwDOF7NJDM4CPK95',
+      repo: 'ydaydayup/myblog',
+      repoId: 'R_kgDOKMY26A',
+      category: 'Q&A',
+      categoryId: 'DIC_kwDOKMY26M4CY_q7',
       theme: 'light',
-      darkTheme: 'dark_dimmed',
-    } satisfies Partial<GiscusConfig>,
+      darkTheme: 'dark',
+    }satisfies Partial<GiscusConfig>,
+    // giscus: {
+    //   repo: 'kuizuo/blog',
+    //   repoId: 'MDEwOlJlcG9zaXRvcnkzOTc2MjU2MTI=',
+    //   category: 'General',
+    //   categoryId: 'DIC_kwDOF7NJDM4CPK95',
+    //   theme: 'light',
+    //   darkTheme: 'dark_dimmed',
+    // } satisfies Partial<GiscusConfig>,
     tableOfContents: {
       minHeadingLevel: 2,
       maxHeadingLevel: 4,
@@ -233,8 +271,8 @@ const config: Config = {
           defaultReadingTime({ content, options: { wordsPerMinute: 300 } }),
         feedOptions: {
           type: 'all',
-          title: '愧怍',
-          copyright: `Copyright © ${new Date().getFullYear()} 愧怍 Built with Docusaurus.<p><a href="http://beian.miit.gov.cn/" class="footer_lin">${beian}</a></p>`,
+          title: 'Ray',
+          copyright: `Copyright © ${new Date().getFullYear()} Ray Built with Docusaurus.<p><a href="http://beian.miit.gov.cn/" class="footer_lin">${beian}</a></p>`,
         },
       },
     ],
@@ -244,7 +282,7 @@ const config: Config = {
       tagName: 'meta',
       attributes: {
         name: 'description',
-        content: '愧怍的个人博客',
+        content: 'Ray的个人博客',
       },
     },
   ],
