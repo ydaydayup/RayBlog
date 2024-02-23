@@ -19,6 +19,7 @@ const config: Config = {
     description:
       '是一个由Ray创建的个人博客，主要分享编程开发知识和项目，该网站基于 React 驱动的静态网站生成器 Docusaurus 构建。',
   },
+  onBrokenLinks:"warn",
   themeConfig: {
     // announcementBar: {
     //   id: 'announcementBar-3',
@@ -71,11 +72,11 @@ const config: Config = {
           position: 'right',
           to: 'docs/skill/',
         },
-        {
-          label: '工作随想',
-          position: 'right',
-          to: 'docs/thought_on_work/',
-        },
+        // {
+        //   label: '工作随想',
+        //   position: 'right',
+        //   to: 'docs/thought_on_work/',
+        // },
         // {
         //   label: '工作随想2',
         //   position: 'right',
@@ -84,7 +85,7 @@ const config: Config = {
         {
           label: '资源',
           position: 'right',
-          to: 'resource',
+          to: 'resources',
         },
         {
           label:  '友链',
