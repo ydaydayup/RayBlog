@@ -333,3 +333,7 @@ div[class^='announcementBar_'] {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+.navbar__logo {
+  border-radius: 40%;
+  overflow: hidden;
+}
