@@ -1,11 +1,14 @@
 ---
 id: docusaurus-search
 slug: /docusaurus-search
-title: 搜索
-authors: kuizuo
+title: 利用 Algolia 为静态博客搭建实现内容搜索
+authors: Ray
+keywords:
+  - Algolia
+  - docusaurus
 ---
 
-> [搜索 | Docusaurus](https://docusaurus.io/zh-CN/docs/search)
+> [搜索 | Docusaurus](https://docusaurus.io/zh-CN/docs/search) 
 
 ## [algolia](https://www.algolia.com/)
 
@@ -19,23 +22,26 @@ authors: kuizuo
 
 关于申请 Algolia DocSearch 在文档中有详细介绍，主要是要申请麻烦，需要等待邮箱，并且还需要回复内容给对方进行确认。所以免费托管的 DocSearch 条件是，比较苛刻的，但申请完几乎是一劳永逸，也是我非常推荐的。如果申请成功后就可以在 [Crawler Admin Console](https://crawler.algolia.com/admin/crawlers) 中查看
 
-![image-20220627232545640](https://img.kuizuo.cn/image-20220627232545640.png)
+![image-20220627232545640](assert/1fd230a4ddf929307a1669b3b2f399c8_MD5.png)
 
-然后将得到 algolia 的 appId，apiKey，indexName 填写到 `docusaurus.config.ts` 中即可。
+然后将得到 algolia 的 appId，apiKey，indexName 填写到 `docusaurus.config.js` 中即可。
 
-```javascript title='docusaurus.config.ts'
-algolia: {
-  appId: 'GV6YN1ODMO',
-  apiKey: '50303937b0e4630bec4a20a14e3b7872',
-  indexName: 'kuizuo',
-}
+```javascript title='docusaurus.config.js'
+algolia: {  
+  appId: 'GV6YN1ODMO',  
+  apiKey: '50303937b0e4630bec4a20a14e3b7872',  
+  indexName: 'RayBlog',  
+  contextualSearch: true,  
+},
 ```
 
 爬取完毕后还会定时发送到你邮箱
 
-![image-20230219144035031](https://img.kuizuo.cn/image-20230219144035031.png)
+![image-20230219144035031](assert/f954ea2b136dd91c337c8df714b2f455_MD5.png)
 
 ### 方案2
+
+#### 本机执行 Docker 爬取本地内容推送到 **Algolia**
 
 [Run your own | DocSearch (algolia.com)](https://docsearch.algolia.com/docs/run-your-own)
 
@@ -43,34 +49,36 @@ algolia: {
 
 首先去申请 [Algolia](https://www.algolia.com/) 账号，然后在左侧 indices 创建索引，在 API Keys 中获取 Application ID 和 API Key（注意，有两个 API KEY）
 
-![image-20210821230135749](https://img.kuizuo.cn/image-20210821230135749.png)
+[Open: Pasted image 20231114202025.png](assert/4a1fe92191a250e8b7a238bf73374ad1_MD5.png)
+![](assert/4a1fe92191a250e8b7a238bf73374ad1_MD5.png)
 
-![image-20210821230232837](https://img.kuizuo.cn/image-20210821230232837.png)
+[Open: Pasted image 20231114202150.png](assert/1e7a21710a039add3c60e4a9a9171f8d_MD5.png)
+![](assert/1e7a21710a039add3c60e4a9a9171f8d_MD5.png)
 
-填入到 `docusaurus.config.ts` 中的 API KEY 是 **Search-Only API Key**
-
+填入到 `docusaurus.config.js` 中的 
+API KEY 是 **Search-Only API Key**
+**appId 是Application ID**
 ```js
-themeConfig: {
-    algolia: {
-      apiKey: "xxxxxxxxxxx",
-      appId: "xxxxxxxxxxx",
-      indexName: "kuizuo",
-    },
-}
+algolia: {  
+  appId: 'GV6YN1ODMO',  
+  apiKey: '50303937b0e4630bec4a20a14e3b7872',  
+  indexName: 'RayBlog',  
+  contextualSearch: true,  
+},
 ```
 
 系统我选用的是 Linux，在 Docker 的环境下运行爬虫代码。不过要先 [安装 jq](https://github.com/stedolan/jq/wiki/Installation#zero-install) 我这里选择的是 0install 进行安装（安装可能稍慢），具体可以查看文档，然后在控制台查看安装结果
 
 ```
-[root@kzserver kuizuo.cn]# jq --version
+[root@kzserver Ray.cn]# jq --version
 jq-1.6
 ```
 
 接着在任意目录中创建 `.env` 文件，填入对应的 APPID 和 API KEY（这里是`Admin API Key`，当时我还一直以为是 Search API Key 坑了我半天 😭）
 
 ```js
-APPLICATION_ID = YOUR_APP_ID
-API_KEY = YOUR_API_KEY
+ALGOLIA_APP_ID=ALGOLIA_APP_ID  
+ALGOLIA_APP_ID=3e17aad34ae5633a8f1c35f4e4278380
 ```
 
 然后创建 `docsearch.json` 文件到项目目录下，其内容可以参考如下（将高亮部分替换成你的网站）
@@ -96,8 +104,21 @@ API_KEY = YOUR_API_KEY
     "text": "article p, article li, article td:last-child"
   },
   "custom_settings": {
-    "attributesForFaceting": ["type", "lang", "language", "version", "docusaurus_tag"],
-    "attributesToRetrieve": ["hierarchy", "content", "anchor", "url", "url_without_anchor", "type"],
+    "attributesForFaceting": [
+      "type",
+      "lang",
+      "language",
+      "version",
+      "docusaurus_tag"
+    ],
+    "attributesToRetrieve": [
+      "hierarchy",
+      "content",
+      "anchor",
+      "url",
+      "url_without_anchor",
+      "type"
+    ],
     "attributesToHighlight": ["hierarchy", "content"],
     "attributesToSnippet": ["content:10"],
     "camelCaseAttributes": ["hierarchy", "content"],
@@ -113,8 +134,20 @@ API_KEY = YOUR_API_KEY
     ],
     "distinct": true,
     "attributeForDistinct": "url",
-    "customRanking": ["desc(weight.pageRank)", "desc(weight.level)", "asc(weight.position)"],
-    "ranking": ["words", "filters", "typo", "attribute", "proximity", "exact", "custom"],
+    "customRanking": [
+      "desc(weight.pageRank)",
+      "desc(weight.level)",
+      "asc(weight.position)"
+    ],
+    "ranking": [
+      "words",
+      "filters",
+      "typo",
+      "attribute",
+      "proximity",
+      "exact",
+      "custom"
+    ],
     "highlightPreTag": "<span class='algolia-docsearch-suggestion--highlight'>",
     "highlightPostTag": "</span>",
     "minWordSizefor1Typo": 3,
@@ -136,20 +169,23 @@ API_KEY = YOUR_API_KEY
 
 运行 docker 命令
 
-```bash
+```sh
 docker run -it --env-file=.env -e "CONFIG=$(cat docsearch.json | jq -r tostring)" algolia/docsearch-scraper
 ```
 
 接着等待容器运行，爬取你的网站即可。最终打开 algolia 控制台提示如下页面则表示成功
 
-![image-20210821225934002](https://img.kuizuo.cn/image-20210821225934002.png)
+![image-20210821225934002](assert/ae16a76c56e7040048f81125f53f0d61_MD5.png)
+
+#### 使用 github-actions
 
 因为要确保项目成功部署后才触发，如果采用 vercel 部署可以按照如下触发条件。
 
-```yaml title='.github/workflows/docsearch.yml'
+```yaml title='.github/workflows/docsearch.yml' 
 name: docsearch
 
-on: deployment
+on:
+  deployment
 
 jobs:
   algolia:
@@ -175,12 +211,6 @@ jobs:
 ```
 
 添加 [secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository) 到你的 Github 仓库中，提交代码便可触发爬虫规则。
-
-## [orama](https://docs.oramasearch.com/open-source/plugins/plugin-docusaurus)
-
-配置 algolia 的过程有稍许的复杂，这里你可以在 docusaurus 中集成 [orama](https://docs.oramasearch.com/open-source/plugins/plugin-docusaurus)，这是一个在浏览器、服务器和边缘运行全文、矢量和混合搜索查询服务。最终实现的效果如图所示
-
-![](https://img.kuizuo.cn/2024/0118082834-202401180828818.png)
 
 ## 本地搜索
 

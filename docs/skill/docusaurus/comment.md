@@ -2,7 +2,7 @@
 id: docusaurus-comment
 slug: /docusaurus-comment
 title: 评论服务
-authors: kuizuo
+authors: Ray
 ---
 
 这里推荐两种评论服务
@@ -21,37 +21,37 @@ Waline：需要搭建后端服务与数据库服务，提供评论与浏览量�
 2. **[giscus](https://github.com/apps/giscus) app 已安装**否则访客将无法评论和回应。
 3. **Discussions** 功能已[在你的仓库中启用](https://docs.github.com/en/github/administering-a-repository/managing-repository-settings/enabling-or-disabling-github-discussions-for-a-repository)。
 
-本博客已经内置好评论组件 [src/component/Comment](https://github.com/kuizuo/blog/blob/main/src/components/Comment/index.tsx)，所以只需要在 `docusaurus.config.ts` 中设置 giscus 的配置即可。
+本博客已经内置好评论组件 [src/component/Comment](https://github.com/ydaydayup/myblog/blob/main/src/components/Comment/index.tsx)，所以只需要在 `docusaurus.config.js` 中设置 giscus 的配置即可。
 
 ### 配置 giscus
 
 打开 [giscus](https://giscus.app/) 官网，填写完对应的信息后，可以得到一个已经配置好的`<script>`标签
 
 ```html
-<script
-  src="https://giscus.app/client.js"
-  data-repo="kuizuo/blog"
-  data-repo-id="MDEwOlJlcG9zaXRvcnkzOTc2Mxxxxx"
-  data-category="General"
-  data-category-id="DIC_kwDOF7NJDM4CPK95"
-  data-mapping="title"
-  data-strict="0"
-  data-reactions-enabled="1"
-  data-emit-metadata="0"
-  data-input-position="top"
-  data-theme="light"
-  data-lang="zh-CN"
-  crossorigin="anonymous"
-  async
-></script>
+<script src="https://giscus.app/client.js"
+        data-repo="ydaydayup/myblog"
+        data-repo-id="R_kgDOKMY26A"
+        data-category="Q&A"
+        data-category-id="DIC_kwDOKMY26M4CY_q7"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="1"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="zh-CN"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
 ```
 
-由于我在 `src/component/Comment` 组件中做了配置合并，并且支持主题变化、国际化。因此，你只需要复制 `data-repo`, `data-repo-id`, `data-category` 和 `data-category-id` 填写到 `docusaurus.config.ts` 中即可，以下是我的配置文件。
+由于我在 `src/component/Comment` 组件中做了配置合并，并且支持主题变化、国际化。因此，你只需要复制 `data-repo`, `data-repo-id`, `data-category` 和  `data-category-id` 填写到 `docusaurus.config.js` 中即可，以下是我的配置文件。
 
-```javascript title='docusaurus.config.ts' icon='logos:docusaurus'
+```javascript title='docusaurus.config.js'
 giscus: {
-  repo: 'kuizuo/blog',
-  repoId: 'MDEwOlJlcG9zaXRvcnkzOTc2Mxxxxx',
+  repo: 'ydaydayup/myblog',
+  repoId: 'MDEwOlJlcG9zaXRvcnkzOTc2MjU2MTI=',
   category: 'General',
   categoryId: 'DIC_kwDOF7NJDM4CPK95',
   theme: 'light',
@@ -59,7 +59,9 @@ giscus: {
 }
 ```
 
-:::info 切记一定要将上述数据替换成你的，如果不替换的话，评论的信息都将会在我的 Discussions 下。
+:::info
+
+如果不替换的话，评论的信息都将会在我的 Discussions 下😂
 
 :::
 
