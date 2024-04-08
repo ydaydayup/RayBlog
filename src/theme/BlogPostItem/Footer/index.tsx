@@ -14,7 +14,7 @@ export default function BlogPostItemFooter(): JSX.Element | null {
   const { metadata, isBlogPostPage } = useBlogPost()
   const { tags, title, editUrl, hasTruncateMarker, date, formattedDate, readingTime, authors } =
     metadata
-
+  console.log({authors, metadata}, "=================")
   // A post is truncated if it's in the "list view" and it has a truncate marker
   const truncatedPost = !isBlogPostPage && hasTruncateMarker
 

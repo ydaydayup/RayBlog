@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>在编写代码时应该避免监听输入法相关事件,而是将外层元素变成一个form表单,并注册表单的提交事件</title>
+</head>
+<body>
+<form  class="search-container">
+    <label>Test
+        <input
+                class="search-input"
+                type="text"
+                placeholder="搜索"
+        />
+    </label>
+    <button type="submit" class="search-button">
+        <span class="search-icon">&#128269;</span>
+    </button>
+</form>
+</body>
+<script type="text/javascript">
+    const onSearch = (e) => {
+        e.preventDefault()
+        console.log("触发搜索")
+    }
+    form = document.querySelector(".search-container")
+    form.onsubmit = onSearch
+</script>
+</html>
