@@ -1,0 +1,96 @@
+---
+id: form-input
+slug: /form-input
+title: input中文输入法回车导致触发enter事件
+date: 2024-04-08
+authors: Ray
+tags: [form, input, 输入法, 中文, ]
+keywords: [ form, input, 输入法, 中文, ]
+sticky: 2
+---
+
+<!-- truncate -->
+
+
+## 问题: 在中文输入法的时候也会触发搜索
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>在编写代码时应该避免监听输入法相关事件,而是将外层元素变成一个form表单,并注册表单的提交事件</title>
+</head>
+<body>
+<div class="search-box">
+    <label>Test
+        <input
+                class="search-input"
+                type="text"
+                placeholder="搜索"
+        />
+    </label>
+    <button type="submit" class="search-button">
+        <span class="search-icon">&#128269;</span>
+    </button>
+</div>
+</body>
+<script type="text/javascript">
+    const onSearch = (e) => {
+        if (e.code === "Enter") {
+            e.preventDefault()
+            console.log("触发搜索")
+        }
+    }
+    input = document.querySelector(".search-input")
+    input.onkeydown = onSearch
+</script>
+</html>
+```
+
+## 解决
+
+方式一:  使用form嵌套input,浏览器会处理compositionstart compositionend
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>在编写代码时应该避免监听输入法相关事件,而是将外层元素变成一个form表单,并注册表单的提交事件</title>
+</head>
+<body>
+<form  class="search-container">
+    <label>Test
+        <input
+                class="search-input"
+                type="text"
+                placeholder="搜索"
+        />
+    </label>
+    <button type="submit" class="search-button">
+        <span class="search-icon">&#128269;</span>
+    </button>
+</form>
+</body>
+<script type="text/javascript">
+    const onSearch = (e) => {
+        e.preventDefault()
+        console.log("触发搜索")
+    }
+    form = document.querySelector(".search-container")
+    form.onsubmit = onSearch
+</script>
+</html>
+```
+
+> 建议最正规
+
+
+方式二:
+判断compositionstart compositionend事件,
+
+> 不建议用此方法
+
+
+方式三:
+判断keyCode, compositionstart compositionend事件触发时按回车keyCode是不一样的,也就是中文输入法和英文输入时按回车keyCode是不一样的
+> 不建议用此方法
