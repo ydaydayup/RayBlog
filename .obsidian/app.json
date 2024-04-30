@@ -11,5 +11,7 @@
   "useMarkdownLinks": true,
   "showLineNumber": true,
   "defaultViewMode": "source",
-  "propertiesInDocument": "source"
+  "propertiesInDocument": "source",
+  "strictLineBreaks": false,
+  "readableLineLength": false
 }

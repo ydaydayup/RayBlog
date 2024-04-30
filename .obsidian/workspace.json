@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/record/表单一定要用form.mdx",
+                "file": "blog/record/PDM介绍.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "blog/record/表单一定要用form.mdx",
+                "file": "blog/record/PDM介绍.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "blog/record/表单一定要用form.mdx",
+                "file": "blog/record/PDM介绍.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "blog/record/表单一定要用form.mdx"
+                "file": "blog/record/PDM介绍.md"
               }
             }
           },
@@ -155,7 +155,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -174,10 +174,13 @@
   },
   "active": "de80064eaee61edb",
   "lastOpenFiles": [
+    "blog/record/assert/Pasted image 20240430211634.png",
+    "blog/record/pdm技巧记录.md",
+    "blog/record/PDM介绍.md",
+    "blog/record/表单一定要用form.mdx",
     "blog/record/学《道德经》：圣人之道，吾性自足，不假外求.md~",
     "blog/record/assert/input输入法问题-正确.html~",
     "Users/yunhongze/Documents/code/blog/blog/record/assert/input输入法问题-错误.html.md",
-    "blog/record/表单一定要用form.mdx",
     "Users/yunhongze/Documents/code/blog/blog/record/assert",
     "Users/yunhongze/Documents/code/blog/blog/record",
     "Users/yunhongze/Documents/code/blog/blog",
@@ -185,7 +188,6 @@
     "Users/yunhongze/Documents/code",
     "Users/yunhongze/Documents",
     "Users/yunhongze",
-    "Users",
     "blog/record/img.png",
     "blog/record/学《道德经》：圣人之道，吾性自足，不假外求.md",
     "blog/record/表单一定要用form.md",
