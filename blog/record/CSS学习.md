@@ -1,6 +1,6 @@
 ---
-slug: pdm技巧记录
-title: pdm技巧记录
+slug: css/record
+title: CSS记录
 date: 2024-03-23
 authors: Ray
 tags: [ css]
