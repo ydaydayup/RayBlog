@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div class="container0"></div>
+<p>linear-gradient() CSS 函数创建一个由两种或多种颜色沿一条直线进行线性过渡的图像，其结果是
+  gradient 数据类型的对象，此对象是一种特殊的 image 数据类型
+</p>
+<div class="container1"></div>
+<p>渐变线的方向的角度。0deg 等价于 to top，增加值相当于顺时针旋转。</p>
+<div class="notching"></div>
+<img src="img.png" alt="">
+<p>第二、第三、第四组同理。当一些属性完全相同的时候，可以省略使用简写，譬如
+  `background-size: 50% 50%, 50% 50%, 50% 50%, 50% 50%`，由于每一组的
+  `background-size` 的值都是 `50% 50%`，所以可以简写成 `background-size: 50%
+  50%`。</p>
+<blockquote>四个背景分别放置在四个方向上，大小正好是四分之一</blockquote>
+
+<div class="container2"></div>
+<p>每一段都是起始点和终点</p>
+<img src="img_1.png" alt="">
+
+<div class="container3"></div>
+<p>
+  遇到此类问题的解决方案是：**在衔接处，适当留出一些渐变空间**。我们简单改造一下上述代码：</p>
+<div class="coupon">50</div>
+<div class="coupon1">50</div>
+<p>
+  CSS中的`background-image`和`background-color`属性都是用来设置元素背景的，但它们之间有一些关键的区别：
+
+  1. **用途**：
+  - `background-image`：用来设置元素的背景图像。你可以指定一个图像的URL，将其作为元素的背景。
+  - `background-color`：用来设置元素的背景颜色。你可以指定一个颜色值，如十六进制颜色代码、RGB、RGBA等。
+
+  2. **叠加方式**：
+  -
+  当你同时使用`background-image`和`background-color`时，背景图像会覆盖在背景颜色之上。如果背景图像有透明度，背景颜色可能会透过图像显示出来。
+
+  3. **兼容性**：
+  - `background-image`和`background-color`都有很好的浏览器兼容性，几乎所有的浏览器都支持这两个属性。
+
+  4. **性能**：
+  - 使用`background-image`时，需要加载图像文件，这可能会对页面加载时间产生影响，尤其是在使用高分辨率图像或大量背景图像时。
+  - `background-color`通常对性能影响较小，因为它不需要加载外部资源。
+
+  5. **可访问性**：
+  - 对于视觉障碍用户，使用`background-color`可能更容易理解，因为它们提供了一致的背景，有助于文本的可读性。
+  - 背景图像可能包含重要信息，也可能仅仅是装饰性的。确保背景图像的使用不会干扰内容的可访问性是很重要的。
+
+  6. **CSS3增强**：
+  -
+  CSS3为背景提供了更多的控制，如`background-size`、`background-repeat`、`background-position`等属性，可以更精细地控制背景图像的显示方式。
+
+  7. **使用场景**：
+  - `background-image`通常用于需要视觉吸引力的元素，如横幅、特色区域等。
+  - `background-color`则更常用于提供简单的背景色，以增强页面的可读性和美观性。
+
+  下面是一个简单的CSS示例，展示了如何同时使用`background-image`和`background-color`：
+
+  ```css
+  .element {
+  background-image: url('path/to/image.jpg');
+  background-color: #f0f0f0; /* 背景颜色 */
+  background-repeat: no-repeat; /* 图像不重复 */
+  background-position: center center; /* 图像居中显示 */
+  background-size: cover; /* 背景图像覆盖整个元素 */
+  }
+  ```
+
+  在这个示例中，`.element`将有一个背景图像和一个背景颜色，图像会覆盖在颜色之上，并且根据指定的属性进行显示。
+</p>
+<div class="wave">50</div>
+<div class="wave-me">50</div>
+</body>
+<style>
+  p {
+    white-space: pre-wrap;
+  }
+
+  body {
+    height: auto;
+  }
+
+  div {
+    width: 200px;
+    height: 200px;
+  }
+
+  .container0 {
+    border: 2px solid #000;
+    background: linear-gradient(#fff 0%, #fff 50%, #f00 50%, #f00 100%);
+  }
+
+  .container1 {
+    border: 2px solid #000;
+    background: linear-gradient(-45deg, #fff 0%, #fff 50%, #f00 50%, #f00 100%);
+  }
+
+  .notching {
+    width: 200px;
+    height: 120px;
+    background: linear-gradient(135deg, transparent 15px, deeppink 0),
+    linear-gradient(-135deg, transparent 15px, deeppink 0),
+    linear-gradient(-45deg, transparent 15px, deeppink 0),
+    linear-gradient(45deg, transparent 15px, deeppink 0);
+    background-size: 50% 50%, 50% 50%, 50% 50%, 50% 50%;
+    background-position: top left, top right, bottom right, bottom left;
+    background-repeat: no-repeat;
+  }
+
+  .container2 {
+    /*background:pink;*/
+    background: repeating-linear-gradient(45deg, pink 0px, pink 15px, transparent 15px, transparent 20px);
+  }
+
+  .container3 {
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(#9c27b0 0%, #9c27b0 47%, #ffeb3b 47%, #ffeb3b 100%);
+
+  }
+
+  .coupon {
+    position: relative;
+    width: 400px;
+    height: 160px;
+    margin: 20px auto;
+    background-image: radial-gradient(circle at 1px 8px, transparent 6px, #f49714 6px, #f49714 0px),
+    radial-gradient(circle at 199px 8px, transparent 6px, #f49714 6px, #f49714 0px);
+    background-size: 200px 18px;
+    background-position: 0 0, 200px 0;
+    /*background-repeat-x: no-repeat;*/
+    background-repeat: repeat-y;
+    font-size: 100px;
+    color: #fff;
+    font-weight: bold;
+    line-height: 160px;
+    padding-left: 60px;
+    box-sizing: border-box;
+    cursor: pointer;
+
+  }
+
+  .coupon::before {
+    position: absolute;
+    content: "";
+    left: 240px;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    border-left: 1px dashed #fff;
+  }
+
+  .coupon::after {
+    position: absolute;
+    content: "立即领取";
+    font-size: 30px;
+    width: 70px;
+    top: 50%;
+    right: 2%;
+    transform: translate(-50%, -50%);
+    line-height: 40px;
+    letter-spacing: 5px;
+  }
+
+  .wave {
+    position: relative;
+    width: 400px;
+    height: 160px;
+    margin: 20px auto;
+    background: linear-gradient(90deg, #945700 0%, #f49714 100%);
+    filter: drop-shadow(-7px 4px 3px #333);
+    font-size: 100px;
+    color: #fff;
+    font-weight: bold;
+    line-height: 160px;
+    padding-left: 60px;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-radius: 5px;
+    text-shadow: -2px -2px 2px #333;
+  }
+
+  /*.wave::before,*/
+  /*.wave::after {*/
+  /*  content: "";*/
+  /*  position: absolute;*/
+  /*  top: 0;*/
+  /*  right: 0;*/
+  /*  bottom: 0;*/
+  /*}*/
+  .wave::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 10px;
+    background-image: radial-gradient(circle at -5px 10px, transparent 12px, #fff 13px, #fff 0px);
+    background-size: 20px 20px;
+    background-position: 0 15px;
+  }
+
+  .wave::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 15px;
+    background-image: radial-gradient(circle at 15px 10px, #fff 12px, transparent 13px, transparent 0px);
+    background-size: 20px 40px;
+    background-position: 0 15px;
+  }
+
+  .coupon1 {
+    width: 400px;
+    height: 160px;
+    position: relative;
+    /*background-color: red;*/
+
+    /*background-image: radial-gradient(circle 8px at left 400px top 8px, transparent 0px,*/
+    /*transparent 4px, red 4px, red 4px);*/
+    /*background-size: 200px 18px;*/
+    /*background-position: 400px 0;*/
+    /*background-repeat: repeat-y;*/
+    /* at 的位置是相对于当前image的，而不是image所渲染的元素*/
+    background-image: radial-gradient(circle 8px at left 200px top 8px, transparent, transparent 8px, #f49714 8px),
+    radial-gradient(circle 8px at left 0px top 8px, transparent, transparent 8px, #f49714 8px, #f49714),
+    repeating-linear-gradient(45deg, blue, red);
+    background-size: 200px 18px, 200px 18px, 1px 1px;
+    background-position: 200px 0, 0 0, 300px 0;
+    background-repeat: repeat-y;
+    margin: 20px auto;
+    color: #fff;
+    font-size: 100px;
+    font-weight: bold;
+    line-height: 160px;
+    padding-left: 60px;
+    box-sizing: border-box;
+  }
+
+  .coupon1::before {
+    content: "";
+    border-right: 1px dashed #fff;
+    position: absolute;
+    width: 40%;
+    height: 100%;
+  }
+
+  /*content为什么会溢出*/
+  .coupon1::after {
+    content: "立即退出";
+    font-size: 30px;
+    line-height: 1.3;
+    position: absolute;
+    right: 50px;
+    /*height: 100%;*/
+    /*top: 44px;*/
+    /*height:70px;*/
+    /*border-left: 1px dashed #fff;*/
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    /*border-left: 1px red;*/
+    width: 2em;
+  }
+
+  .wave-me {
+    width: 400px;
+    height: 160px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 100px;
+    line-height: 160px;
+    color: white;
+    font-weight: bold;
+    padding-left: 60px;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, #945700, #f49714);
+  }
+  .wave-me::before{
+    content: "";
+    position: absolute;
+    right:0;
+    height: 100%;
+    width: 10px;
+    background-image: radial-gradient(circle at -5px 10px, transparent 12px, #fff 15px, #fff 0px);
+    background-size: 20px 20px;
+    background-position: 0 15px;
+    background-repeat: repeat-y;
+  }
+  .wave-me::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 15px;
+    background-image: radial-gradient(circle at 15px 10px, #fff 12px, transparent 13px, transparent 0px);
+    background-size: 20px 40px;
+    background-position: 0 15px;
+  }
+</style>
+</html>
