@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/record/学《道德经》：圣人之道，吾性自足，不假外求.md",
+                "file": "others/CSS 技术揭秘与实战通关/2 CSS 最强大属性 background 的 8 种核心技巧.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,14 +25,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/record/PDM介绍.md",
+                "file": "others/CSS 技术揭秘与实战通关/2 CSS 最强大属性 background 的 8 种核心技巧.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -61,7 +60,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "17. **交互式背景**：",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -82,7 +81,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 319.5
+    "width": 660.5
   },
   "right": {
     "id": "b3ee3709d551c6bd",
@@ -98,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "blog/record/PDM介绍.md",
+                "file": "others/CSS 技术揭秘与实战通关/2 CSS 最强大属性 background 的 8 种核心技巧.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "blog/record/PDM介绍.md",
+                "file": "others/CSS 技术揭秘与实战通关/2 CSS 最强大属性 background 的 8 种核心技巧.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "blog/record/PDM介绍.md"
+                "file": "others/CSS 技术揭秘与实战通关/2 CSS 最强大属性 background 的 8 种核心技巧.md"
               }
             }
           },
@@ -159,7 +158,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 840.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -172,31 +171,53 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "de80064eaee61edb",
+  "active": "c4f19244655d482e",
   "lastOpenFiles": [
-    "blog/record/assert/Pasted image 20240430211634.png",
-    "blog/record/pdm技巧记录.md",
+    "others/2024最新web面试集合/2024前端高频—Node&Webpack&性能优化篇(2).pdf",
+    "others/2024最新web面试集合/2024前端高频—React万字总结篇(1)(2).pdf",
+    "others/2024最新web面试集合/2024前端高频—小程序&Git万字总结(2).pdf",
+    "others/2024最新web面试集合/2024前端高频—数据结构与算法篇(2).pdf",
+    "others/2024最新web面试集合/2024前端高频—CSS万字总结(2).pdf",
+    "others/2024最新web面试集合/2024前端高频—前端工程化篇(1).pdf",
+    "others/2024最新web面试集合/2024前端高频—手写代码篇(2).pdf",
+    "others/2024最新web面试集合/2024前端高频—HTML篇(1).pdf",
+    "others/2024最新web面试集合/2024前端面试上岸手册（八股文）.pdf",
+    "others/2024最新web面试集合/2024前端高频—VUE篇(1).pdf",
+    "others/2024最新web面试集合/前端秘法/web前端训练营大纲.pdf",
+    "blog/record/CSS居中方法.md",
+    "blog/record/css-backgroud.md",
+    "others/CSS 技术揭秘与实战通关/2 CSS 最强大属性 background 的 8 种核心技巧.md",
+    "others/CSS 技术揭秘与实战通关/1 开篇词：欢迎来到奇妙的 CSS 世界，开启精通 CSS 之路！.md",
     "blog/record/PDM介绍.md",
-    "blog/record/表单一定要用form.mdx",
-    "blog/record/学《道德经》：圣人之道，吾性自足，不假外求.md~",
-    "blog/record/assert/input输入法问题-正确.html~",
-    "Users/yunhongze/Documents/code/blog/blog/record/assert/input输入法问题-错误.html.md",
-    "Users/yunhongze/Documents/code/blog/blog/record/assert",
-    "Users/yunhongze/Documents/code/blog/blog/record",
-    "Users/yunhongze/Documents/code/blog/blog",
-    "Users/yunhongze/Documents/code/blog",
-    "Users/yunhongze/Documents/code",
-    "Users/yunhongze/Documents",
-    "Users/yunhongze",
-    "blog/record/img.png",
+    "blog/record/11-定位的简介.md",
+    "blog/record/CSS学习2.md",
+    "blog/record/assert/f49c7be1e017c83aa0f6b9740e4e1c50_MD5.gif",
+    "blog/record/assert/ad9ba9d0823ed6f587e56fec83a4bab3_MD5.gif",
+    "blog/record/assert/917598fad5766f9d198ce804006d81cc_MD5.gif",
+    "blog/record/assert/718ce19385f418ae9b340e9c2a102062_MD5.png",
+    "blog/record/assert/6207ee3b0b713723cd59fc34dd02a4ce_MD5.jpg",
+    "blog/record/assert/62b9b6991c41f8c11d4a073248b781ab_MD5.png",
+    "blog/record/assert/d4e339894f8455184e653003829cf566_MD5.png",
+    "blog/record/assert/594502db1ad71e72279431a921f6822f_MD5.jpg",
+    "blog/record/assert/63b7be2b21745dc82064f0599e55b379_MD5.png",
+    "blog/record/assert/a0c3b528946b9ad2a4ddc0a40cb8573a_MD5.gif",
+    "others/CSS 技术揭秘与实战通关/33 CSS 布局的发展及演变.md",
+    "others/CSS 技术揭秘与实战通关/21 CSS 动画渲染及性能优化.md",
+    "others/CSS 技术揭秘与实战通关/25 CSS 3D 动画进阶实战技巧.md",
+    "others/CSS 技术揭秘与实战通关/27 CSS 配合 SVG 构建高级动效：令人惊叹的滤镜.md",
+    "others/CSS 技术揭秘与实战通关/29 边框实战技巧及进阶动画解析.md",
+    "others/CSS 技术揭秘与实战通关/30 字体实战技巧及进阶动画解析.md",
+    "others/CSS 技术揭秘与实战通关/10 filter：CSS 中的三种滤镜模式及其特殊性介绍.md",
+    "others/CSS 技术揭秘与实战通关/26 CSS 配合 SVG 构建高级动效：美妙的线条动画.md",
+    "others/CSS 技术揭秘与实战通关/22 从 CSS 变量到 CSS @property，突破传统 CSS 限制.md",
+    "others/CSS 技术揭秘与实战通关/18 transition：过渡技巧与细节，构建更强大的交互效果.md",
+    "others/CSS 技术揭秘与实战通关/17 现代 CSS 伪类及伪元素.md",
+    "others/CSS 技术揭秘与实战通关/16 mix-blend-mode：基于混合模式的高级动画技巧.md",
+    "others/CSS 技术揭秘与实战通关/19 animation：动画技巧与细节，彻底掌握 CSS 动画精髓.md",
     "blog/record/学《道德经》：圣人之道，吾性自足，不假外求.md",
-    "blog/record/表单一定要用form.md",
-    "docs/skill/web/表单一定要用form.md",
-    "blog/record/每日记录.md",
-    "blog/record/element-plus_pr.md",
-    "blog/record/assert/5cd82177db6778ad8531d827fd2b54da_MD5.jpg",
-    "blog/record/assert/151e50c8db3fcadf14808ae8bfe549b8_MD5.jpg",
-    "blog/record/CSS学习.md",
-    "docs/skill/introduction.md"
+    "others/CSS 技术揭秘与实战通关/14 mix-blend-mode 与 background-blend-mode：初识混合模式.md",
+    "others/CSS 技术揭秘与实战通关/11 filter：blur() 模糊的超强使用技巧及搭配 contrast() 的元素边缘处理.md",
+    "others/CSS 技术揭秘与实战通关/9 shadow 的 4 种高阶技巧讲解：复制自身、遮罩模拟、光效动画及阴影性能优化.md",
+    "others/CSS 技术揭秘与实战通关/12 filter：比阴影更强大的 drop-shadow() 阴影技巧.md"
   ]
 }
