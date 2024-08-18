@@ -1,0 +1,12 @@
+version: '3.5'
+services:
+  nginx:
+    image: nginx:stable
+    container_name: my-nginx
+    ports:
+      - 80:80
+    volumes:
+      - /opt/docker/nginx/nginx.conf:/etc/nginx/nginx.conf
+      - /opt/docker/nginx/logs:/var/log/nginx
+    privileged: true
+  restart: always

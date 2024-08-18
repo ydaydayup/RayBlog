@@ -20,6 +20,32 @@
             }
           },
           {
+            "id": "61d9f524a77562c4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "others/CSS 技术揭秘与实战通关/2 CSS 最强大属性 background 的 8 种核心技巧.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c666524d11174571",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/skill/docker/修改无法启动的Docker容器配置文件.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
             "id": "de80064eaee61edb",
             "type": "leaf",
             "state": {
@@ -30,8 +56,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "207ab4a1dba3ebb1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "blog/record/分别使用grid和绝对定位实现元素层叠效果.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -60,7 +99,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "17. **交互式背景**：",
+                "query": "docker",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -81,7 +120,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 660.5
+    "width": 674.5
   },
   "right": {
     "id": "b3ee3709d551c6bd",
@@ -97,7 +136,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "others/CSS 技术揭秘与实战通关/2 CSS 最强大属性 background 的 8 种核心技巧.md",
+                "file": "blog/record/分别使用grid和绝对定位实现元素层叠效果.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +153,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "others/CSS 技术揭秘与实战通关/2 CSS 最强大属性 background 的 8 种核心技巧.md",
+                "file": "blog/record/分别使用grid和绝对定位实现元素层叠效果.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +176,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "others/CSS 技术揭秘与实战通关/2 CSS 最强大属性 background 的 8 种核心技巧.md"
+                "file": "blog/record/分别使用grid和绝对定位实现元素层叠效果.md"
               }
             }
           },
@@ -171,36 +210,45 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "c4f19244655d482e",
+  "active": "207ab4a1dba3ebb1",
   "lastOpenFiles": [
-    "others/2024最新web面试集合/2024前端高频—Node&Webpack&性能优化篇(2).pdf",
-    "others/2024最新web面试集合/2024前端高频—React万字总结篇(1)(2).pdf",
-    "others/2024最新web面试集合/2024前端高频—小程序&Git万字总结(2).pdf",
-    "others/2024最新web面试集合/2024前端高频—数据结构与算法篇(2).pdf",
-    "others/2024最新web面试集合/2024前端高频—CSS万字总结(2).pdf",
-    "others/2024最新web面试集合/2024前端高频—前端工程化篇(1).pdf",
-    "others/2024最新web面试集合/2024前端高频—手写代码篇(2).pdf",
-    "others/2024最新web面试集合/2024前端高频—HTML篇(1).pdf",
-    "others/2024最新web面试集合/2024前端面试上岸手册（八股文）.pdf",
-    "others/2024最新web面试集合/2024前端高频—VUE篇(1).pdf",
-    "others/2024最新web面试集合/前端秘法/web前端训练营大纲.pdf",
+    "docs/skill/docker/修改无法启动的Docker容器配置文件.md",
+    "others/CSS 技术揭秘与实战通关/2 CSS 最强大属性 background 的 8 种核心技巧.md",
+    "blog/record/分别使用grid和绝对定位实现元素层叠效果.md",
+    "blog/record/E-Commerce Shop.md",
+    "blog/record/assert/01ae07dc0ad83f00c729ce03973ca635_MD5.png",
+    "docs/skill/docker/使用docker compose管理所有容器+066eb8e3-b829-4f60-b13e-9ff83732ada6.md",
+    "blog/reference/E-Commerce Shop.md",
+    "others/work/docker-mange-contain/postgres.yaml",
+    "others/work/docker-mange-contain/redis.yaml",
+    "others/work/docker-mange-contain/nginx.yaml",
+    "others/work/docker-mange-contain/mysql.yaml",
+    "others/work/docker-mange-contain/compose.yaml",
+    "others/work/docker-mange-contain/-p",
+    "others/work/docker-mange-contain",
+    "others/work/docker mange contain/-p",
+    "others/work/docker mange contain/redis.yaml",
+    "others/work/docker mange contain/nginx.yaml",
+    "使用docker+compose管理所有容器+066eb8e3-b829-4f60-b13e-9ff83732ada6/nginx.conf.md",
+    "docs/skill/docker/使用docker compose管理所有容器.md",
+    "docs/skill/docker/assert/使用docker+compose管理所有容器+066eb8e3-b829-4f60-b13e-9ff83732ada6.md",
+    "docs/skill/docker/assert/2d85ee25b49b68e6550b188bb21c4574_MD5.png",
+    "docs/skill/docker/assert/db730e639db00b3f43cfdd0311d39f12_MD5.png",
+    "docs/skill/docker/assert/fe406654a05251fc115a4745327a4d9e_MD5.png",
+    "docs/skill/docker/assert/68ace87290d5cedc351c67b8e1e523e5_MD5.png",
+    "docs/skill/docker/assert/a6c195c8e4f0da569da4cf5564ad7981_MD5.png",
+    "docs/skill/docker/assert/8adf742cb1faaf3087cfcc720cd36168_MD5.png",
+    "docs/skill/docker/使用docker+compose管理所有容器x.md",
+    "others/CSS 技术揭秘与实战通关/1 开篇词：欢迎来到奇妙的 CSS 世界，开启精通 CSS 之路！.md",
+    "others/xxxx.md",
     "blog/record/CSS居中方法.md",
     "blog/record/css-backgroud.md",
-    "others/CSS 技术揭秘与实战通关/2 CSS 最强大属性 background 的 8 种核心技巧.md",
-    "others/CSS 技术揭秘与实战通关/1 开篇词：欢迎来到奇妙的 CSS 世界，开启精通 CSS 之路！.md",
     "blog/record/PDM介绍.md",
     "blog/record/11-定位的简介.md",
     "blog/record/CSS学习2.md",
     "blog/record/assert/f49c7be1e017c83aa0f6b9740e4e1c50_MD5.gif",
     "blog/record/assert/ad9ba9d0823ed6f587e56fec83a4bab3_MD5.gif",
     "blog/record/assert/917598fad5766f9d198ce804006d81cc_MD5.gif",
-    "blog/record/assert/718ce19385f418ae9b340e9c2a102062_MD5.png",
-    "blog/record/assert/6207ee3b0b713723cd59fc34dd02a4ce_MD5.jpg",
-    "blog/record/assert/62b9b6991c41f8c11d4a073248b781ab_MD5.png",
-    "blog/record/assert/d4e339894f8455184e653003829cf566_MD5.png",
-    "blog/record/assert/594502db1ad71e72279431a921f6822f_MD5.jpg",
-    "blog/record/assert/63b7be2b21745dc82064f0599e55b379_MD5.png",
-    "blog/record/assert/a0c3b528946b9ad2a4ddc0a40cb8573a_MD5.gif",
     "others/CSS 技术揭秘与实战通关/33 CSS 布局的发展及演变.md",
     "others/CSS 技术揭秘与实战通关/21 CSS 动画渲染及性能优化.md",
     "others/CSS 技术揭秘与实战通关/25 CSS 3D 动画进阶实战技巧.md",
@@ -209,15 +257,6 @@
     "others/CSS 技术揭秘与实战通关/30 字体实战技巧及进阶动画解析.md",
     "others/CSS 技术揭秘与实战通关/10 filter：CSS 中的三种滤镜模式及其特殊性介绍.md",
     "others/CSS 技术揭秘与实战通关/26 CSS 配合 SVG 构建高级动效：美妙的线条动画.md",
-    "others/CSS 技术揭秘与实战通关/22 从 CSS 变量到 CSS @property，突破传统 CSS 限制.md",
-    "others/CSS 技术揭秘与实战通关/18 transition：过渡技巧与细节，构建更强大的交互效果.md",
-    "others/CSS 技术揭秘与实战通关/17 现代 CSS 伪类及伪元素.md",
-    "others/CSS 技术揭秘与实战通关/16 mix-blend-mode：基于混合模式的高级动画技巧.md",
-    "others/CSS 技术揭秘与实战通关/19 animation：动画技巧与细节，彻底掌握 CSS 动画精髓.md",
-    "blog/record/学《道德经》：圣人之道，吾性自足，不假外求.md",
-    "others/CSS 技术揭秘与实战通关/14 mix-blend-mode 与 background-blend-mode：初识混合模式.md",
-    "others/CSS 技术揭秘与实战通关/11 filter：blur() 模糊的超强使用技巧及搭配 contrast() 的元素边缘处理.md",
-    "others/CSS 技术揭秘与实战通关/9 shadow 的 4 种高阶技巧讲解：复制自身、遮罩模拟、光效动画及阴影性能优化.md",
-    "others/CSS 技术揭秘与实战通关/12 filter：比阴影更强大的 drop-shadow() 阴影技巧.md"
+    "others/CSS 技术揭秘与实战通关/22 从 CSS 变量到 CSS @property，突破传统 CSS 限制.md"
   ]
 }
