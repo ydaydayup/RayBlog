@@ -1,0 +1,23 @@
+version: '3.5'
+services:
+  redis:
+    extends:
+      file: redis.yaml
+      service: redis
+    restart: always            # 设置重启策略为 always
+  mysql:
+    extends:
+      file: mysql.yaml
+      service: mysql
+    restart: always            # 设置重启策略为 always
+  nginx:
+    extends:
+      file: nginx.yaml
+      service: nginx
+    restart: always            # 设置重启策略为 always
+
+  postgres:
+    extends:
+      file: postgres.yaml
+      service: postgres
+    restart: always            # 设置重启策略为 always

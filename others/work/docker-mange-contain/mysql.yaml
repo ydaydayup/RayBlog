@@ -1,0 +1,15 @@
+version: '3.5'
+services:
+  mysql:
+    image: mysql:5.7
+    container_name: my-mysql
+    platform: linux/amd64
+    ports:
+      - 3307:3306
+    volumes:
+      - /opt/docker/mysql/log/mysql:/var/log/mysql
+      - /opt/docker/mysql/lib/mysql:/var/lib/mysql
+      - /opt/docker/mysql/mysql/conf.d:/etc/mysql/conf.d
+    environment:
+      - MYSQL_ROOT_PASSWORD=123456
+    privileged: true
