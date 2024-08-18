@@ -1,0 +1,15 @@
+version: '3.5'
+services:
+  postgres:
+    image: postgres
+    shm_size: 128mb
+    container_name: my-postgres
+    environment:
+      POSTGRES_PASSWORD: root
+      POSTGRES_USER: root
+      POSTGRES_DB: root
+#   adminer:
+#       image: adminer
+#       restart: always
+#       ports:
+#         - 8080:8080
