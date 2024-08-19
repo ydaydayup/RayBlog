@@ -29,9 +29,9 @@ keywords: [grid, absolute, 元素层叠]
 ```jsx
         <div className={"relative"}>
             <img className={"absolute z-50  select-none"} src={'/phone-template-white-edges.png'}
-                 alt="loding faile"/>
+                 alt="loading fail"/>
             <img className={"absolute -z-10 inset-0 object-cover min-w-full min-h-full"} src={imgSrc}
-                 alt="loding faile"/>
+                 alt="loading fail"/>
         </div>
 ```
 > `relative`来让父元素成为定位的参考，这样子元素就可以使用`absolute`来控制位置了，因为`absolute`是相对于最近的定位父元素来定位的
