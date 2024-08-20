@@ -15,6 +15,8 @@ description: python的包管理工具pdm
 
 ## Python环境管理大比拼：pip、Conda、Pyenv、Rye、Virtualenv、PDM、Poetry等工具
 
+<!-- truncate -->
+
 ### **工具分类**
 
 - Python 版本管理
