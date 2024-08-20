@@ -8,69 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "c4f19244655d482e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "others/CSS 技术揭秘与实战通关/2 CSS 最强大属性 background 的 8 种核心技巧.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "61d9f524a77562c4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "others/CSS 技术揭秘与实战通关/2 CSS 最强大属性 background 的 8 种核心技巧.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c666524d11174571",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/skill/docker/修改无法启动的Docker容器配置文件.md",
-                "mode": "source",
-                "source": false
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "de80064eaee61edb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "others/CSS 技术揭秘与实战通关/2 CSS 最强大属性 background 的 8 种核心技巧.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "207ab4a1dba3ebb1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/record/分别使用grid和绝对定位实现元素层叠效果.md",
+                "file": "blog/record/css中的单位.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -120,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 674.5
+    "width": 321.5
   },
   "right": {
     "id": "b3ee3709d551c6bd",
@@ -136,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "blog/record/分别使用grid和绝对定位实现元素层叠效果.md",
+                "file": "blog/record/css中的单位.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -153,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "blog/record/分别使用grid和绝对定位实现元素层叠效果.md",
+                "file": "blog/record/css中的单位.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -176,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "blog/record/分别使用grid和绝对定位实现元素层叠效果.md"
+                "file": "blog/record/css中的单位.md"
               }
             }
           },
@@ -212,9 +161,12 @@
   },
   "active": "207ab4a1dba3ebb1",
   "lastOpenFiles": [
-    "docs/skill/docker/修改无法启动的Docker容器配置文件.md",
+    "blog/record/Content-Disposition.md",
+    "blog/record/repeat.md",
+    "blog/record/css中的单位.md",
     "others/CSS 技术揭秘与实战通关/2 CSS 最强大属性 background 的 8 种核心技巧.md",
     "blog/record/分别使用grid和绝对定位实现元素层叠效果.md",
+    "docs/skill/docker/修改无法启动的Docker容器配置文件.md",
     "blog/record/E-Commerce Shop.md",
     "blog/record/assert/01ae07dc0ad83f00c729ce03973ca635_MD5.png",
     "docs/skill/docker/使用docker compose管理所有容器+066eb8e3-b829-4f60-b13e-9ff83732ada6.md",
@@ -254,9 +206,6 @@
     "others/CSS 技术揭秘与实战通关/25 CSS 3D 动画进阶实战技巧.md",
     "others/CSS 技术揭秘与实战通关/27 CSS 配合 SVG 构建高级动效：令人惊叹的滤镜.md",
     "others/CSS 技术揭秘与实战通关/29 边框实战技巧及进阶动画解析.md",
-    "others/CSS 技术揭秘与实战通关/30 字体实战技巧及进阶动画解析.md",
-    "others/CSS 技术揭秘与实战通关/10 filter：CSS 中的三种滤镜模式及其特殊性介绍.md",
-    "others/CSS 技术揭秘与实战通关/26 CSS 配合 SVG 构建高级动效：美妙的线条动画.md",
-    "others/CSS 技术揭秘与实战通关/22 从 CSS 变量到 CSS @property，突破传统 CSS 限制.md"
+    "others/CSS 技术揭秘与实战通关/30 字体实战技巧及进阶动画解析.md"
   ]
 }
