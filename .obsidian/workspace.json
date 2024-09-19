@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/record/css中的单位.md",
+                "file": "blog/record/混淆矩阵.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "docker",
+                "query": "混淆矩阵",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "blog/record/css中的单位.md",
+                "file": "blog/record/混淆矩阵.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "blog/record/css中的单位.md",
+                "file": "blog/record/混淆矩阵.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "blog/record/css中的单位.md"
+                "file": "blog/record/混淆矩阵.md"
               }
             }
           },
@@ -161,9 +161,14 @@
   },
   "active": "207ab4a1dba3ebb1",
   "lastOpenFiles": [
-    "blog/record/Content-Disposition.md",
+    "src/plugin/plugin-content-blog/index.js",
+    "src/plugin/plugin-content-blog/index.ts",
+    "blog/record/css Marquee.md",
     "blog/record/repeat.md",
     "blog/record/css中的单位.md",
+    "static/html/The Infinite Marquee.html",
+    "blog/record/css动画animation.md",
+    "blog/record/Content-Disposition.md",
     "others/CSS 技术揭秘与实战通关/2 CSS 最强大属性 background 的 8 种核心技巧.md",
     "blog/record/分别使用grid和绝对定位实现元素层叠效果.md",
     "docs/skill/docker/修改无法启动的Docker容器配置文件.md",
@@ -179,8 +184,6 @@
     "others/work/docker-mange-contain/-p",
     "others/work/docker-mange-contain",
     "others/work/docker mange contain/-p",
-    "others/work/docker mange contain/redis.yaml",
-    "others/work/docker mange contain/nginx.yaml",
     "使用docker+compose管理所有容器+066eb8e3-b829-4f60-b13e-9ff83732ada6/nginx.conf.md",
     "docs/skill/docker/使用docker compose管理所有容器.md",
     "docs/skill/docker/assert/使用docker+compose管理所有容器+066eb8e3-b829-4f60-b13e-9ff83732ada6.md",
@@ -203,9 +206,6 @@
     "blog/record/assert/917598fad5766f9d198ce804006d81cc_MD5.gif",
     "others/CSS 技术揭秘与实战通关/33 CSS 布局的发展及演变.md",
     "others/CSS 技术揭秘与实战通关/21 CSS 动画渲染及性能优化.md",
-    "others/CSS 技术揭秘与实战通关/25 CSS 3D 动画进阶实战技巧.md",
-    "others/CSS 技术揭秘与实战通关/27 CSS 配合 SVG 构建高级动效：令人惊叹的滤镜.md",
-    "others/CSS 技术揭秘与实战通关/29 边框实战技巧及进阶动画解析.md",
-    "others/CSS 技术揭秘与实战通关/30 字体实战技巧及进阶动画解析.md"
+    "others/CSS 技术揭秘与实战通关/25 CSS 3D 动画进阶实战技巧.md"
   ]
 }

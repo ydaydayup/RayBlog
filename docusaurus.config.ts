@@ -1,8 +1,10 @@
-import type { Config } from '@docusaurus/types'
+import type {Config} from '@docusaurus/types'
 import type * as Preset from '@docusaurus/preset-classic'
-import { themes } from 'prism-react-renderer'
-import { GiscusConfig } from './src/components/Comment'
+import {themes} from 'prism-react-renderer'
+import {GiscusConfig} from './src/components/Comment'
 import social from './data/social'
+import rehypeKatex from "rehype-katex"
+import remarkMath from "remark-math"
 
 const beian = '闽ICP备2020017848号-2'
 const beian1 = '闽公网安备35021102000847号'
@@ -19,7 +21,7 @@ const config: Config = {
     description:
       '是一个由Ray创建的个人博客，主要分享编程开发知识和项目，该网站基于 React 驱动的静态网站生成器 Docusaurus 构建。',
   },
-  onBrokenLinks:"warn",
+  onBrokenLinks: "warn",
   themeConfig: {
     // announcementBar: {
     //   id: 'announcementBar-3',
@@ -88,7 +90,7 @@ const config: Config = {
           to: 'resources',
         },
         {
-          label:  '友链',
+          label: '友链',
           position: 'right',
           to: 'friends',
         },
@@ -109,28 +111,28 @@ const config: Config = {
         {
           title: '学习',
           items: [
-            { label: '博客', to: 'blog' },
-            { label: '归档', to: 'blog/archive' },
-            { label: '技术笔记', to: 'docs/skill' },
-            { label: '实战项目', to: 'project' },
-            { label: '前端示例', to: 'https://example.kuizuo.cn' },
+            {label: '博客', to: 'blog'},
+            {label: '归档', to: 'blog/archive'},
+            {label: '技术笔记', to: 'docs/skill'},
+            {label: '实战项目', to: 'project'},
+            {label: '前端示例', to: 'https://example.kuizuo.cn'},
           ],
         },
         {
           title: '社交媒体',
           items: [
-            { label: '关于我', to: '/about' },
-            { label: 'GitHub', href: social.github.href },
-            { label: 'Twitter', href: social.twitter.href },
-            { label: '掘金', href: social.juejin.href },
-            { label: 'Discord', href: social.discord.href },
+            {label: '关于我', to: '/about'},
+            {label: 'GitHub', href: social.github.href},
+            {label: 'Twitter', href: social.twitter.href},
+            {label: '掘金', href: social.juejin.href},
+            {label: 'Discord', href: social.discord.href},
           ],
         },
         {
           title: '更多',
           items: [
-            { label: '友链', position: 'right', to: 'friends' },
-            { label: '导航', position: 'right', to: 'resources' },
+            {label: '友链', position: 'right', to: 'friends'},
+            {label: '导航', position: 'right', to: 'resources'},
             {
               html: `
                 <a href="https://docusaurus.io/zh-CN/" target="_blank" rel="noreferrer noopener">
@@ -144,8 +146,8 @@ const config: Config = {
       copyright: `
         <p style="margin-bottom: 0;"><a href="http://beian.miit.gov.cn/">${beian}</a></p>
         <p style="display: inline-flex; align-items: center;"><img style="height:20px;margin-right: 0.5rem;" src="/img/police.png" alt="police" height="20"/><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=${beian1.match(
-          /\d+/,
-        )?.[0]}" >${beian1}</a></p>
+        /\d+/,
+      )?.[0]}" >${beian1}</a></p>
         <p>Copyright © 2020 - PRESENT Ray Built with Docusaurus.</p>
         `,
     },
@@ -179,7 +181,7 @@ const config: Config = {
         {
           className: 'theme-code-block-highlighted-line',
           line: 'highlight-next-line',
-          block: { start: 'highlight-start', end: 'highlight-end' },
+          block: {start: 'highlight-start', end: 'highlight-end'},
         },
         {
           className: 'code-block-error-line',
@@ -207,7 +209,7 @@ const config: Config = {
       minHeadingLevel: 2,
       maxHeadingLevel: 4,
     },
-    liveCodeBlock: { playgroundPosition: 'top' },
+    liveCodeBlock: {playgroundPosition: 'top'},
     zoom: {
       selector: '.markdown :not(em) > img',
       background: {
@@ -239,20 +241,23 @@ const config: Config = {
       } satisfies Preset.Options,
     ],
   ],
+
+
   plugins: [
     'docusaurus-plugin-image-zoom',
     'docusaurus-plugin-sass',
     '@docusaurus/plugin-ideal-image',
-    ['docusaurus-plugin-baidu-tongji', { token: 'c9a3849aa75f9c4a4e65f846cd1a5155' }],
+
+    ['docusaurus-plugin-baidu-tongji', {token: 'c9a3849aa75f9c4a4e65f846cd1a5155'}],
     [
       '@docusaurus/plugin-pwa',
       {
         debug: process.env.NODE_ENV === 'development',
         offlineModeActivationStrategies: ['appInstalled', 'standalone', 'queryString'],
         pwaHead: [
-          { tagName: 'link', rel: 'icon', href: '/img/logo.png' },
-          { tagName: 'link', rel: 'manifest', href: '/manifest.json' },
-          { tagName: 'meta', name: 'theme-color', content: '#12affa' },
+          {tagName: 'link', rel: 'icon', href: '/img/logo.png'},
+          {tagName: 'link', rel: 'manifest', href: '/manifest.json'},
+          {tagName: 'meta', name: 'theme-color', content: '#12affa'},
         ],
       },
     ],
@@ -260,16 +265,18 @@ const config: Config = {
       './src/plugin/plugin-content-blog', // 为了实现全局 blog 数据，必须改写 plugin-content-blog 插件
       {
         path: 'blog',
-        editUrl: ({ locale, blogDirPath, blogPath, permalink }) =>
+        editUrl: ({locale, blogDirPath, blogPath, permalink}) =>
           `https://github.com/kuizuo/blog/edit/main/${blogDirPath}/${blogPath}`,
         editLocalizedFiles: false,
         blogDescription: '代码人生：编织技术与生活的博客之旅',
         blogSidebarCount: 10,
         blogSidebarTitle: 'Blogs',
         postsPerPage: 10,
+        remarkPlugins: [remarkMath],
+        rehypePlugins: [rehypeKatex],
         showReadingTime: true,
-        readingTime: ({ content, frontMatter, defaultReadingTime }) =>
-          defaultReadingTime({ content, options: { wordsPerMinute: 300 } }),
+        readingTime: ({content, frontMatter, defaultReadingTime}) =>
+          defaultReadingTime({content, options: {wordsPerMinute: 300}}),
         feedOptions: {
           type: 'all',
           title: 'Ray',
