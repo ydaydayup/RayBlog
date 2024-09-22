@@ -161,6 +161,8 @@
   },
   "active": "207ab4a1dba3ebb1",
   "lastOpenFiles": [
+    "blog/record/【解决问题】根据react中的类型工具理解实例类型 属性类型.md",
+    "blog/record/【解决问题】react中的类型 实例类型 属性类型.md",
     "src/plugin/plugin-content-blog/index.js",
     "src/plugin/plugin-content-blog/index.ts",
     "blog/record/css Marquee.md",
@@ -183,7 +185,6 @@
     "others/work/docker-mange-contain/compose.yaml",
     "others/work/docker-mange-contain/-p",
     "others/work/docker-mange-contain",
-    "others/work/docker mange contain/-p",
     "使用docker+compose管理所有容器+066eb8e3-b829-4f60-b13e-9ff83732ada6/nginx.conf.md",
     "docs/skill/docker/使用docker compose管理所有容器.md",
     "docs/skill/docker/assert/使用docker+compose管理所有容器+066eb8e3-b829-4f60-b13e-9ff83732ada6.md",
@@ -205,7 +206,6 @@
     "blog/record/assert/ad9ba9d0823ed6f587e56fec83a4bab3_MD5.gif",
     "blog/record/assert/917598fad5766f9d198ce804006d81cc_MD5.gif",
     "others/CSS 技术揭秘与实战通关/33 CSS 布局的发展及演变.md",
-    "others/CSS 技术揭秘与实战通关/21 CSS 动画渲染及性能优化.md",
-    "others/CSS 技术揭秘与实战通关/25 CSS 3D 动画进阶实战技巧.md"
+    "others/CSS 技术揭秘与实战通关/21 CSS 动画渲染及性能优化.md"
   ]
 }
