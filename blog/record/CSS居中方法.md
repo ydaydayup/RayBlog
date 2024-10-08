@@ -1,6 +1,4 @@
 ---
-#slug: use-nuxt3-build-api-server
-title: css居中方法总结
 date: 2024-06-05
 tags: [ css, 居中 ]
 keywords: [ css, 居中 ]

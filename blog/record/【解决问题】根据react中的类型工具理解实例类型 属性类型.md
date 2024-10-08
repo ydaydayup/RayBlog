@@ -60,13 +60,13 @@ const DialogContent = React.forwardRef<
 ```
 
 ### React.ComponentPropsWithoutRef 的解释
-> Used to retrieve the props a component accepts without its ref. Can either be passed a string, indicating a DOM element (e. g. 'div', 'span', etc.) or the type of a React component.
+> `Used to retrieve the props a component accepts without its ref. Can either be passed a string, indicating a DOM element (e. g. 'div', 'span', etc.) or the type of a React component.
 Example:
 // Retrieves the props an 'input' element accepts type InputProps = React. ComponentPropsWithoutRef<'input'>;
 Example:
 const MyComponent = (props: { foo: number, bar: string }) => <div />;  // Retrieves the props 'MyComponent' accepts type MyComponentPropsWithoutRef = React. ComponentPropsWithoutRef<typeof MyComponent>;
 See also:
-@link https:// react-typescript-cheatsheet. netlify. app/ docs/ react-types/ componentprops/  React TypeScript Cheatsheet
+@link https:// react-typescript-cheatsheet. netlify. app/ docs/ react-types/ componentprops/  React TypeScript Cheatsheet`
 
 
 ## 理解“实例类型”和“属性类型”的区别
