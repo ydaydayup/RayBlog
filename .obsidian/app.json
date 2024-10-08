@@ -12,6 +12,6 @@
   "showLineNumber": true,
   "defaultViewMode": "source",
   "propertiesInDocument": "source",
-  "strictLineBreaks": false,
+  "strictLineBreaks": true,
   "readableLineLength": false
 }

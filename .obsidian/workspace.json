@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/record/混淆矩阵.md",
+                "file": "blog/record/grid网格布局.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7756a75c23a80c23",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "others/work/工作计划.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -48,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "混淆矩阵",
+                "query": "CSS居中方法.md",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "blog/record/混淆矩阵.md",
+                "file": "others/work/工作计划.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "blog/record/混淆矩阵.md",
+                "file": "others/work/工作计划.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "blog/record/混淆矩阵.md"
+                "file": "others/work/工作计划.md"
               }
             }
           },
@@ -140,9 +153,17 @@
                 "searchQuery": ""
               }
             }
+          },
+          {
+            "id": "4c77296ab7dbd0f2",
+            "type": "leaf",
+            "state": {
+              "type": "online.larslockefeer.obsidian-plugin-todo",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -159,8 +180,25 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "207ab4a1dba3ebb1",
+  "active": "7756a75c23a80c23",
   "lastOpenFiles": [
+    "blog/record/grid网格布局.md",
+    "blog/record/assert/20a895335eed8030ec2c0fbcbbf2228d_MD5.png",
+    "blog/record/assert/2bf4aae4a4e7ce3ee87582df0f8e1962_MD5.png",
+    "blog/record/assert/26335d600dcaff12a45f1311f8fb18a9_MD5.png",
+    "blog/record/assert/55ca46fdbc5a9899d8e2bea288ba8e0a_MD5.png",
+    "blog/record/assert/0c4145bf6153fbd8bdf2155609356c7f_MD5.png",
+    "blog/record/assert/c13420eec164a5652bf7628d5648f9c0_MD5.png",
+    "blog/record/assert/b8238cda70214ce283b1c403a7ee0ad5_MD5.png",
+    "blog/record/assert/1deb6b9de5bcc7920b7e478c3ebc3d24_MD5.png",
+    "blog/record/CSS居中方法.md",
+    "others/work/工作计划.md",
+    "others/work/2024-09-27.md",
+    "blog/project/API-Service接口服务.md",
+    "others/work/2024.md",
+    "others/work/assert",
+    "blog/record/混淆矩阵.md",
+    "blog/record/浏览器插件开发出坑指南.md",
     "blog/record/【解决问题】根据react中的类型工具理解实例类型 属性类型.md",
     "blog/record/【解决问题】react中的类型 实例类型 属性类型.md",
     "src/plugin/plugin-content-blog/index.js",
@@ -184,28 +222,10 @@
     "others/work/docker-mange-contain/mysql.yaml",
     "others/work/docker-mange-contain/compose.yaml",
     "others/work/docker-mange-contain/-p",
-    "others/work/docker-mange-contain",
     "使用docker+compose管理所有容器+066eb8e3-b829-4f60-b13e-9ff83732ada6/nginx.conf.md",
     "docs/skill/docker/使用docker compose管理所有容器.md",
     "docs/skill/docker/assert/使用docker+compose管理所有容器+066eb8e3-b829-4f60-b13e-9ff83732ada6.md",
     "docs/skill/docker/assert/2d85ee25b49b68e6550b188bb21c4574_MD5.png",
-    "docs/skill/docker/assert/db730e639db00b3f43cfdd0311d39f12_MD5.png",
-    "docs/skill/docker/assert/fe406654a05251fc115a4745327a4d9e_MD5.png",
-    "docs/skill/docker/assert/68ace87290d5cedc351c67b8e1e523e5_MD5.png",
-    "docs/skill/docker/assert/a6c195c8e4f0da569da4cf5564ad7981_MD5.png",
-    "docs/skill/docker/assert/8adf742cb1faaf3087cfcc720cd36168_MD5.png",
-    "docs/skill/docker/使用docker+compose管理所有容器x.md",
-    "others/CSS 技术揭秘与实战通关/1 开篇词：欢迎来到奇妙的 CSS 世界，开启精通 CSS 之路！.md",
-    "others/xxxx.md",
-    "blog/record/CSS居中方法.md",
-    "blog/record/css-backgroud.md",
-    "blog/record/PDM介绍.md",
-    "blog/record/11-定位的简介.md",
-    "blog/record/CSS学习2.md",
-    "blog/record/assert/f49c7be1e017c83aa0f6b9740e4e1c50_MD5.gif",
-    "blog/record/assert/ad9ba9d0823ed6f587e56fec83a4bab3_MD5.gif",
-    "blog/record/assert/917598fad5766f9d198ce804006d81cc_MD5.gif",
-    "others/CSS 技术揭秘与实战通关/33 CSS 布局的发展及演变.md",
-    "others/CSS 技术揭秘与实战通关/21 CSS 动画渲染及性能优化.md"
+    "docs/skill/docker/使用docker+compose管理所有容器x.md"
   ]
 }
