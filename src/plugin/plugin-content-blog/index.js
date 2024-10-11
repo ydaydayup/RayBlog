@@ -1,9 +1,6 @@
 import pluginContentBlog from '@docusaurus/plugin-content-blog';
 
 async function blogPluginEnhanced(context, options) {
-  // console.log(pluginContentBlog)
-  return pluginContentBlog(context, options)
-  // const blogPluginInstance = await pluginContentBlog(context, options);
   return pluginContentBlog(context, options).then(blogPluginInstance => {
     console.log(blogPluginInstance)
     return {
