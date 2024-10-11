@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "others/work/工作计划.md",
+                "file": "blog/record/css中的单位.md",
                 "mode": "source",
                 "source": false
               }
@@ -82,7 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 321.5
+    "width": 200
   },
   "right": {
     "id": "b3ee3709d551c6bd",
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "others/work/工作计划.md",
+                "file": "blog/record/css中的单位.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "others/work/工作计划.md",
+                "file": "blog/record/css中的单位.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "others/work/工作计划.md"
+                "file": "blog/record/css中的单位.md"
               }
             }
           },
@@ -163,7 +163,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -182,6 +182,14 @@
   },
   "active": "7756a75c23a80c23",
   "lastOpenFiles": [
+    "others/xxxxx.md",
+    "blog/record/xxxxx.md",
+    "blog/record/在 Tailwind CSS 中实现多主题模式：超越 Dark Mode.md",
+    "blog/record/在 Tailwind CSS 中实现多主题模式 超越 Dark Mode.md",
+    "docs/skill/docusaurus/guides.mdx",
+    "blog/record/css中的单位.md",
+    "blog/record/CSS学习.md",
+    "others/work/工作计划.md",
     "blog/record/grid网格布局.md",
     "blog/record/assert/20a895335eed8030ec2c0fbcbbf2228d_MD5.png",
     "blog/record/assert/2bf4aae4a4e7ce3ee87582df0f8e1962_MD5.png",
@@ -192,7 +200,6 @@
     "blog/record/assert/b8238cda70214ce283b1c403a7ee0ad5_MD5.png",
     "blog/record/assert/1deb6b9de5bcc7920b7e478c3ebc3d24_MD5.png",
     "blog/record/CSS居中方法.md",
-    "others/work/工作计划.md",
     "others/work/2024-09-27.md",
     "blog/project/API-Service接口服务.md",
     "others/work/2024.md",
@@ -205,7 +212,6 @@
     "src/plugin/plugin-content-blog/index.ts",
     "blog/record/css Marquee.md",
     "blog/record/repeat.md",
-    "blog/record/css中的单位.md",
     "static/html/The Infinite Marquee.html",
     "blog/record/css动画animation.md",
     "blog/record/Content-Disposition.md",
@@ -221,11 +227,6 @@
     "others/work/docker-mange-contain/nginx.yaml",
     "others/work/docker-mange-contain/mysql.yaml",
     "others/work/docker-mange-contain/compose.yaml",
-    "others/work/docker-mange-contain/-p",
-    "使用docker+compose管理所有容器+066eb8e3-b829-4f60-b13e-9ff83732ada6/nginx.conf.md",
-    "docs/skill/docker/使用docker compose管理所有容器.md",
-    "docs/skill/docker/assert/使用docker+compose管理所有容器+066eb8e3-b829-4f60-b13e-9ff83732ada6.md",
-    "docs/skill/docker/assert/2d85ee25b49b68e6550b188bb21c4574_MD5.png",
-    "docs/skill/docker/使用docker+compose管理所有容器x.md"
+    "docs/skill/docker/assert/2d85ee25b49b68e6550b188bb21c4574_MD5.png"
   ]
 }
