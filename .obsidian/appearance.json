@@ -1,7 +1,8 @@
 {
-  "accentColor": "",
+  "accentColor": "#4d25ad",
   "theme": "obsidian",
   "baseFontSizeAction": true,
   "baseFontSize": 24,
-  "translucency": true
+  "translucency": false,
+  "cssTheme": "Minimal"
 }

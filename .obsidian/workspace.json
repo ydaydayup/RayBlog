@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/record/CSS居中方法.md",
+                "file": "others/work/工作计划.md",
                 "mode": "source",
                 "source": false
               }
@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -82,7 +81,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 324.5
   },
   "right": {
     "id": "b3ee3709d551c6bd",
@@ -98,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "blog/record/CSS学习.md",
+                "file": "others/work/工作计划.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "blog/record/CSS学习.md",
+                "file": "others/work/工作计划.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "blog/record/CSS学习.md"
+                "file": "others/work/工作计划.md"
               }
             }
           },
@@ -180,8 +179,13 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "7756a75c23a80c23",
+  "active": "207ab4a1dba3ebb1",
   "lastOpenFiles": [
+    "others/【2024秋季班】深度学习课件 2.zip.002",
+    "others/【2024秋季班】深度学习课件 2.zip.001",
+    "others/【2024秋季班】深度学习课件.zip",
+    "blog/record/CSS居中方法.md",
+    "blog/record/CSS学习.md",
     "others/xxxxx.md",
     "others/work/工作计划.md",
     "blog/record/浏览器插件开发出坑指南.md",
@@ -206,12 +210,10 @@
     "blog/develop/assert/8beaf398d019b4f24bbe83834e313c2f_MD5.png",
     "blog/develop/assert/4e4f4beb16d7e90820909a88fee94b25_MD5.png",
     "blog/develop/assert",
-    "blog/record/CSS居中方法.md",
     "blog/record/xxxxx.md",
     "blog/record/在 Tailwind CSS 中实现多主题模式：超越 Dark Mode.md",
     "blog/record/在 Tailwind CSS 中实现多主题模式 超越 Dark Mode.md",
     "docs/skill/docusaurus/guides.mdx",
-    "blog/record/CSS学习.md",
     "others/work/2024-09-27.md",
     "blog/project/API-Service接口服务.md",
     "others/work/2024.md",
@@ -224,8 +226,6 @@
     "docs/skill/docker/修改无法启动的Docker容器配置文件.md",
     "blog/record/E-Commerce Shop.md",
     "others/work/docker-mange-contain/postgres.yaml",
-    "others/work/docker-mange-contain/redis.yaml",
-    "others/work/docker-mange-contain/nginx.yaml",
-    "others/work/docker-mange-contain/mysql.yaml"
+    "others/work/docker-mange-contain/redis.yaml"
   ]
 }

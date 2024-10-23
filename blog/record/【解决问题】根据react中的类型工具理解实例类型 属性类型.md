@@ -9,6 +9,7 @@ description: 在 TypeScript 中，理解“实例类型”和“属性类型”
 sticky: 2  
 ---  
 
+<!-- truncate -->
 
 ## 问题
 
